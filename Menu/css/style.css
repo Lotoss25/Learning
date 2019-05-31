@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    background: #000;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: -150px;
+    top: 0;
+    transition: all ease 1s;
+}
