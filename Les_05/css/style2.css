@@ -1,0 +1,15 @@
+img {
+    visibility: hidden;
+}
+
+hr {
+    visibility: hidden;
+}
+
+html * {
+    color: black;
+}
+
+button {
+    visibility: hidden;
+}
