@@ -13,7 +13,7 @@ let randomizer = (function () {
 
 document.querySelector("#btn").onclick = function () {
     let number = parseInt(document.querySelector("#input-number").value);
-    if (isNaN !== number && number != "") {
+    if (isNaN !== number && number !== "") {
         if (number > randomizer) {
             alert("Ваше число больше задуманного");
             document.querySelector("#input-number").value = "";
