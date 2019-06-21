@@ -1,0 +1,20 @@
+.block {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 50px;
+}
+
+.folder {
+    width: 65px;
+    height: 65px;
+    margin: 50px;
+    background: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698927-icon-94-folder-64.png")
+}
+
+.blocks {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 20px;
+}
