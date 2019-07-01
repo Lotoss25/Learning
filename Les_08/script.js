@@ -44,4 +44,14 @@ document.querySelector(".third").onmouseenter = function () {
     let b = parseInt(randomInteger(0, 255), 16);
     document.querySelector(".third").style.background = "#" + r + g + b;
 }
+
+
+
+// let blocks = document.querySelectorAll(".blocks");
+// //console.log(blocks);
+// blocks.forEach(
+//     function (blocks) {
+//         blocks.style.background = "#" + parseInt(randomInteger(0, 255), 16) + parseInt(randomInteger(0, 255), 16) + parseInt(randomInteger(0, 255), 16);
+//     }
+// )
 //вопрос - как применить цвет фона ко всему блоку сразу ?
