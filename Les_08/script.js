@@ -26,32 +26,33 @@ function randomInteger(min, max) {
     return rand;
 }
 
-document.querySelector(".first").onmouseenter = function () {
-    let r = parseInt(randomInteger(0, 255), 16);
-    let g = parseInt(randomInteger(0, 255), 16);
-    let b = parseInt(randomInteger(0, 255), 16);
-    document.querySelector(".first").style.background = "#" + r + g + b;
-}
-document.querySelector(".second").onmouseenter = function () {
-    let r = parseInt(randomInteger(0, 255), 16);
-    let g = parseInt(randomInteger(0, 255), 16);
-    let b = parseInt(randomInteger(0, 255), 16);
-    document.querySelector(".second").style.background = "#" + r + g + b;
-}
-document.querySelector(".third").onmouseenter = function () {
-    let r = parseInt(randomInteger(0, 255), 16);
-    let g = parseInt(randomInteger(0, 255), 16);
-    let b = parseInt(randomInteger(0, 255), 16);
-    document.querySelector(".third").style.background = "#" + r + g + b;
-}
+// document.querySelector(".first").onmouseenter = function () {
+//     let r = parseInt(randomInteger(0, 255), 16);
+//     let g = parseInt(randomInteger(0, 255), 16);
+//     let b = parseInt(randomInteger(0, 255), 16);
+//     document.querySelector(".first").style.background = "#" + r + g + b;
+// }
+// document.querySelector(".second").onmouseenter = function () {
+//     let r = parseInt(randomInteger(0, 255), 16);
+//     let g = parseInt(randomInteger(0, 255), 16);
+//     let b = parseInt(randomInteger(0, 255), 16);
+//     document.querySelector(".second").style.background = "#" + r + g + b;
+// }
+// document.querySelector(".third").onmouseenter = function () {
+//     let r = parseInt(randomInteger(0, 255), 16);
+//     let g = parseInt(randomInteger(0, 255), 16);
+//     let b = parseInt(randomInteger(0, 255), 16);
+//     document.querySelector(".third").style.background = "#" + r + g + b;
+// }
 
 
 
-// let blocks = document.querySelectorAll(".blocks");
-// //console.log(blocks);
-// blocks.forEach(
-//     function (blocks) {
-//         blocks.style.background = "#" + parseInt(randomInteger(0, 255), 16) + parseInt(randomInteger(0, 255), 16) + parseInt(randomInteger(0, 255), 16);
-//     }
-// )
-//вопрос - как применить цвет фона ко всему блоку сразу ?
+//let blocks = document.querySelectorAll(".blocks");
+//console.log(blocks);
+document.querySelectorAll(".blocks").forEach(
+    function (e) {
+        e.onmouseenter = function () {
+            e.style.background = "#" + parseInt(randomInteger(0, 255), 16) + parseInt(randomInteger(0, 255), 16) + parseInt(randomInteger(0, 255), 16);
+        }
+    }
+)
