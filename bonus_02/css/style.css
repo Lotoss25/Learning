@@ -1,0 +1,24 @@
+.tabs {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.tab {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tab-body {
+    padding: 10px;
+}
+
+.active {
+    font-weight: bold;
+}
