@@ -6,11 +6,11 @@ show(document.querySelector(".active").getAttribute("data"));
 function show(data) {
     for (let i = 0; i < tab.length; i++) {
         if (i + 1 == data) {
-            tab[i].className = "tab active";
-            tabs[i].style.display = "";
+            tab[i].classList.add('active');
+            tabs[i].style.display = "block";
         }
         else {
-            tab[i].className = "tab";
+            tab[i].classList.remove('active')
             tabs[i].style.display = "none";
         }
     }
@@ -20,6 +20,7 @@ tab.forEach(
         e.onclick = function () {
             let data = e.getAttribute("data");
             show(data);
+            return false;
         }
     }
 );
