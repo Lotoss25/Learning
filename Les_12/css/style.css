@@ -1,0 +1,35 @@
+.modal {
+    border: 1px solid black;
+    height: 400px;
+    width: 250px;
+    text-align: center;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.rules {
+    height: 400px;
+    width: 500px;
+    background: bisque;
+    transition: all ease 1s;
+}
+
+.rules-left, .rules-right {
+    width: 50%;
+    float: left;
+    min-height: 50px;
+}
+
+.rules-left {
+    background: red;
+}
+
+.rules-right {
+    background: green;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.rules-read, .rules-read-back {
+    cursor: pointer;
+}
