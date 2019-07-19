@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Взято с решения задачи урока №6 -->
+    <form>
+        <p><input type="text" class="text-input" name="text"></p>
+        <p><input type="date" class="date-input" name="date"></p>
+        <p><input type="range" class="range-input" max="100" name="range"></p>
+        <p><input type="password" class="pass-input" name="pass"></p>
+        <p><input type="checkbox" class="checkbox-input" id="checkbox-input1" name="checkbox">
+            <label for="checkbox-input1">First</label></p>
+        <p><input type="checkbox" class="checkbox-input" id="checkbox-input2">
+            <label for="checkbox-input2">Second</label></p>
+        <p><input type="checkbox" class="checkbox-input" id="checkbox-input3">
+            <label for="checkbox-input3">Third</label></p>
+        <button id="btnAll">Вывести все в консоли</button>
+        <hr>
+        <p><input type="color" class="color-input"></p>
+        <button id="btnColor">Применить цвет окна</button>
+        <hr>
+        <p><input type="color" class="color-input1" name="color"></p>
+        <p><input type="color" class="color-input2"></p>
+        <button id="btnChange">Применить цвет окна и текста</button>
+        <button id="btnReverse">Вернуть цвет окна и текста</button>
+        <hr>
+        <span class="span-input">text</span>
+        <p><input type="range" class="font-input" min="14" max="48" value="16"></p>
+        <hr>
+        <p>R<input type="range" class="rgb-input-r" min="0" max="255"><span class="span-r">128</span></p>
+        <p>G<input type="range" class="rgb-input-g" min="0" max="255"><span class="span-g">128</span></p>
+        <p>B<input type="range" class="rgb-input-b" min="0" max="255"><span class="span-b">128</span></p>
+        <span class="span-out"></span>
+        <div class="rgb-output">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta dolore, quos nihil
+            autem eum. Illo earum commodi dignissimos harum necessitatibus esse praesentium tenetur laudantium nostrum!
+            Et
+            doloremque ullam id!</div>
+        <button id="send-form">SEND</button>
+    </form>
+    <script src="js/serialize.js"></script>
+    <script src="js/form2.js"></script>
+</body>
+
+</html>
