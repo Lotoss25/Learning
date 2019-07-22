@@ -1,11 +1,10 @@
-document.querySelector(".button").onclick = function () {
-    addChips("hello", 4000);
-}
-
-function addChips(message, sec = 3000) {
+"use strict";
+function addChips(message, sec = 3000, color = "white", background = "rgba(0,0,0,.6)") {
     let chips = document.createElement("div");
     chips.classList.add("chips");
+    chips.style.backgroundColor = background;
     chips.innerHTML = message;
+    chips.style.color = color;
     chipsBody(chips);
     //document.querySelector("body").appendChild(div);
     setTimeout(function () { clearChips(chips) }, sec);
