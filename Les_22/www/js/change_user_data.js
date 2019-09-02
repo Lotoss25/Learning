@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.datepicker');
-    var instances = M.Datepicker.init(elems, { "format": "dd-mm-yyyy" });
+    let elems = document.querySelectorAll('.datepicker');
+    let instances = M.Datepicker.init(elems, { "format": "dd-mm-yyyy" });
 });
 
 let myCookie = getCookie("email");
@@ -66,11 +66,11 @@ function update() {
 
 //берем данные с нашего куки, выводим данные в поля
 function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
@@ -112,7 +112,7 @@ document.querySelector("#update-input").onclick = function () {
 
     function changeFunction(out) {
         if (out == 1) {
-            console.log("Account changes saved");
+            M.toast({ html: 'Account changes saved!' });
             update();
         }
     }
