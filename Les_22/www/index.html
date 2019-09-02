@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="POST">
+        <div>name: <input type="text" name="name" id="form-name"></div>
+        <div>password: <input type="text" name="pass" id="form-pass"></div>
+        <div>email: <input type="text" name="email" id="form-email"></div>
+        <div>birthday: <input type="text" name="birthday" id="form-birth"></div>
+        <div>sex:
+            <div> <input type="radio" value="male" name="sex" id="sex" checked>male</div>
+            <div><input type="radio" value="female" name="sex" id="sex">female</div>
+            <div><input type="radio" value="other" name="sex" id="sex">other</div>
+        </div>
+        <input type="submit" value="send" id="form-submit">
+    </form>
+    <hr>
+    <form method="POST">
+        <div>email: <input type="text" name="email" id="login-email" value="lotoss25@gmail.com"></div>
+        <div>password: <input type="text" name="pass" id="login-pass" value="111111"></div>
+        <input type="submit" value="login" id="login-form">
+    </form>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
