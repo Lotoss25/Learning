@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row center-align">
+        <h3>First Page</h3>
+        <div class="col l6"></div>
+        <div class="col l6">
+            <button class=" modal-show waves-effect waves-light btn" data-modal="#sign-up">Signup</button>
+            <div class="col l6">
+                <button class="modal-show waves-effect waves-light btn" data-modal="#log-in">Login</button>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="modal-wrap hide" id="sign-up">
+
+        <div class="modal-win">
+            <a class="modal-close" data-modal="#sign-up"><i class="material-icons left">cancel</i></a>
+            <div class="rules">
+                <div class="rules-left">
+                    <form>
+                        <div class="container">
+                            <div class="input-field col s12">
+                                <input placeholder="Your Name" id="form-name" type="text" class="validate">
+                                <label for="form-name">Name: </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Your Password" id="form-pass" type="password" class="validate">
+                                <label for="form-pass">Password: </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Your Email" id="form-email" type="email" class="validate">
+                                <label for="form-email">Email: </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Your Birthday" id="form-birth" type="text" class="datepicker">
+                                <label class="active" for="form-birth">Birthday: </label>
+                            </div>
+
+                            <div>sex:
+                                <p>
+                                    <label>
+                                        <input name="sex" type="radio" value="male" class="with-gap sex" checked />
+                                        <span>male</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input name="sex" type="radio" value="female" class="with-gap sex" d />
+                                        <span>female</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input name="sex" type="radio" value="other" class="with-gap sex" />
+                                        <span>other</span>
+                                    </label>
+                                </p>
+
+
+
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in rules-fill" />
+                                        <span></span>
+                                    </label>
+                                    <span class="rules-read"><u>Read rules...</u>
+                                </p>
+
+                                </span>
+
+                                <button class="waves-effect waves-light btn disabled" id="form-submit">Signup</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="rules-right">
+                        <p class="rules-read-back"><u>back...</u></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse enim cupiditate vel saepe
+                            molestias
+                            beatae fuga soluta corrupti! Fuga recusandae autem obcaecati dolorem sequi earum temporibus.
+                            Qui
+                            sed est minima!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse enim cupiditate vel saepe
+                            molestias
+                            beatae fuga soluta corrupti! Fuga recusandae autem obcaecati dolorem sequi earum temporibus.
+                            Qui
+                            sed est minima!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse enim cupiditate vel saepe
+                            molestias
+                            beatae fuga soluta corrupti! Fuga recusandae autem obcaecati dolorem sequi earum temporibus.
+                            Qui
+                            sed est minima!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse enim cupiditate vel saepe
+                            molestias
+                            beatae fuga soluta corrupti! Fuga recusandae autem obcaecati dolorem sequi earum temporibus.
+                            Qui
+                            sed est minima!</p>
+                        <p class="rules-read-back"><u>back...</u></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrap hide" id="log-in">
+        <div class="modal-win">
+            <a class="modal-close" data-modal="#log-in"><i class="material-icons left">cancel</i></a>
+            <form>
+                <div class="container-login">
+                    <div class="input-field col s6">
+                        <input placeholder="Your Email" id="login-email" type="email" class="validate">
+                        <label for="login-email">Email: </label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input placeholder="Your Password" id="login-pass" type="password" class="validate">
+                        <label for="login-pass">Password: </label>
+                    </div>
+                    <button class="waves-effect waves-light btn" id="login-form">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+.update-user {
+    display: none;
+}
+
+.modal-wrap {
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-win {
+    border-radius: 12px;
+    margin: 0;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    position: relative;
+    width: 400px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #26a69a;
+    overflow: hidden;
+}
+
+.container-login {
+    padding: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: -18px;
+    top: -3px;
+    cursor: pointer;
+}
+
+.rules {
+    width: 800px;
+    height: 550px;
+    transition: all ease 1s;
+}
+
+.rules-left, .rules-right {
+    width: 50%;
+    float: left;
+}
+
+.rules-right {
+    padding: 0px;
+    width: 400px;
+    overflow-y: scroll;
+}
+
+[type="checkbox"]+span:not(.lever) {
+    padding-left: 20px;
+    height: 16px;
+}
+
+.rules-read, .rules-read-back {
+    cursor: pointer;
+}
