@@ -15,3 +15,8 @@ for (let key in a2) {
 }
 
 document.querySelector(".out").innerHTML = out;
+
+let outTwo = document.querySelector(".out-2").innerHTML;
+switch (document.querySelector(".radio").checked) {
+    case 3: outTwo = "hello"
+}

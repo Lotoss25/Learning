@@ -1,0 +1,46 @@
+.clearfix {
+    width: 100%;
+    clear: both;
+}
+
+.wrap {
+    background: blue;
+    padding: 5px;
+}
+
+.block1 {
+    background: red;
+    width: 23%;
+    min-height: 100px;
+    float: left;
+    margin: 0 1%;
+}
+
+.block2 {
+    background: red;
+    width: 18%;
+    min-height: 100px;
+    float: left;
+    margin: 0 1%;
+}
+
+.block3 {
+    background: red;
+    width: 12.28%;
+    min-height: 100px;
+    float: left;
+    margin: 0 1%;
+}
+
+.block0 {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background: green;
+    margin: 10px;
+}
+
+.lorem {
+    background: pink;
+    /* margin: 2% 0; */
+}
