@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    background: #f6f8f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 10px auto;
+    color: #43525d;
+}
+
+h3 {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+h3 .color-headers {
+    color: #ff7013;
+}
+
+.block-270 {
+    width: 22.5%;
+    min-height: 365px;
+    background: #fff;
+    float: left;
+    margin: 0 1.25%;
+}
+
+/* -------------------goods-block------ */
+
+.goods-block {
+    font-size: 18px;
+    margin: 80px 0;
+}
+
+.goods-block .block-270 {
+    text-align: center;
+}
+
+.goods-block .block-270:hover {
+    background: red;
+}
+
+.goods-block img {
+    margin-top: 30px;
+}
+
+.goods-block .goods-cost {
+    color: #ff7013;
+    font-weight: bold;
+}
+
+.goods-description {
+    text-align: center;
+}
