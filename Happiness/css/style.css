@@ -1,0 +1,180 @@
+html, body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.clearfix {
+    width: 100%;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 1200px;
+    height: 300px;
+    background: url(../images/header-image.jpg) no-repeat;
+}
+
+.asociations, .phones {
+    float: left;
+}
+
+.asociations {
+    position: relative;
+    width: 80%;
+    height: 150px;
+    /* background-color: black; */
+}
+
+.asociations img {
+    position: absolute;
+    left: 10px;
+}
+
+.phones {
+    color: black;
+    font-style: italic;
+    /* font-weight: bold; */
+    width: 20%;
+    height: 150px;
+    /* background-color: green; */
+    text-align: center;
+}
+
+.phones p {
+    margin: 0;
+}
+
+.basket {
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 150px;
+    /* background-color: cyan; */
+}
+
+#basket {
+    width: 250px;
+    height: 80px;
+    /* background-color: #fff; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+#basket span {
+    position: absolute;
+    float: right;
+    right: 5px;
+    top: 5px;
+}
+
+ul {
+    list-style: none;
+    /*убираем маркеры списка*/
+    margin: 0 auto;
+    /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0;
+    /*убираем левый отступ, равный 40px*/
+}
+
+.menu {
+    float: left;
+    width: 1200px;
+    height: 50px;
+    background: #ECDAD6;
+}
+
+nav {
+    display: block;
+    width: 635px;
+    margin: 0 auto 30px;
+}
+
+.menu li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    /*убираем подчеркивание текста ссылок*/
+    transition: .5s linear;
+    /* background: rgba(177, 152, 145, .3); */
+    color: #695753;
+    overflow: hidden;
+}
+
+a:hover {
+    background: #b19891;
+}
+
+.menu .selected {
+    background: #b19891
+}
+
+article {
+    position: relative;
+}
+
+.sidebar {
+    position: absolute;
+    width: 200px;
+}
+
+.sidebar a {
+    color: #c5bcb3;
+    font-weight: bold;
+}
+
+.slider_block {
+    /* padding: 1em; */
+    position: absolute;
+    /* display: block; */
+    left: 205px;
+    width: 995px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+.slider {
+    width: 50%;
+    margin: 1em auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 300px;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.main {
+    position: absolute;
+    top: 350px;
+    width: 1200px;
+    height: 500px;
+}
